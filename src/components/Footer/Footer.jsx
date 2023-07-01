@@ -13,7 +13,7 @@ const Footer = () => {
         <div>
           Made with ❤️ by{" "}
           <a
-            href="https://bhumikawebsite.netlify.app/"
+            href=""
             target="_blank"
             rel="noreferrer"
             className="not-link"
