@@ -46,6 +46,9 @@ function App() {
     const encodedToken = localStorage.getItem("token");
     setEncodedToken(encodedToken ?? "");
 
+    return () => {
+      localStorage.removeItem("token");
+    };
   }, []);
 
   useEffect(() => {
@@ -53,8 +56,6 @@ function App() {
       try {
         const response = await axios.get("/api/users");
         dispatch({ type: "GET_USERS", payload: response.data.users });
-        // console.log(response.data.users);
-        // getUserLoggedInData();
       } catch (e) {
         console.log(e);
       }
@@ -66,7 +67,6 @@ function App() {
       try {
         setLoading(true);
         const response = await axios.get("/api/posts");
-        // console.log(response);
         dispatch({ type: "GET_POSTS", payload: response.data.posts });
         setLoading(false);
       } catch (e) {
@@ -75,12 +75,8 @@ function App() {
     })();
   }, [encodedToken]);
 
-  window.onbeforeunload = () => {
-    localStorage.removeItem("token");
-  };
   return (
     <div className="App">
-
       {editPost && <Modal open={setEditPost} />}
       {openModal && <Modal open={setOpenModal} />}
       {editProfile && <ProfileModal open={setEditProfile} />}
@@ -88,9 +84,9 @@ function App() {
         {encodedToken && <Navbar />}
         <div className="section">
           <Routes>
-            <Route path="/test" element={<Mockman />}></Route>
-            <Route path="/signup" element={<SignUp />}></Route>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/test" element={<Mockman />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/" element={<Home />} />
             <Route
               path="/landing"
               element={
@@ -98,7 +94,7 @@ function App() {
                   <Landing />
                 </AuthWrapper>
               }
-            ></Route>
+            />
             <Route
               path="/explore"
               element={
@@ -106,7 +102,7 @@ function App() {
                   <Explore />
                 </AuthWrapper>
               }
-            ></Route>
+            />
             <Route
               path="/bookmark"
               element={
@@ -114,7 +110,7 @@ function App() {
                   <Bookmark />
                 </AuthWrapper>
               }
-            ></Route>
+            />
             <Route
               path="/likepage"
               element={
@@ -122,7 +118,7 @@ function App() {
                   <LikePage />
                 </AuthWrapper>
               }
-            ></Route>
+            />
             <Route
               path="/profilepage/:username"
               element={
@@ -130,7 +126,7 @@ function App() {
                   <ProfilePage />
                 </AuthWrapper>
               }
-            ></Route>
+            />
             <Route
               path="/postpage/:postId"
               element={
@@ -138,7 +134,7 @@ function App() {
                   <SinglePost />
                 </AuthWrapper>
               }
-            ></Route>
+            />
           </Routes>
         </div>
         {localStorage.getItem("token") && (
@@ -149,7 +145,7 @@ function App() {
                 <h2>You might Like</h2>
                 {/* suggestions to  user*/}
                 {state?.userToFollow?.map((user) => (
-                  <UserList user={user} />
+                  <UserList user={user} key={user.id} />
                 ))}
               </div>
             </div>
@@ -164,3 +160,4 @@ function App() {
 }
 
 export default App;
+

@@ -77,8 +77,8 @@ const Home = () => {
               </button>
 
               <button
-                id="btn-default"
-                className="btn-default"
+                id="btn-primary"
+                className="btn-primary"
                 onClick={() => {
                   setLoginInput(creds);
                   loginHandler(creds);

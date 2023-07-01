@@ -27,6 +27,8 @@ const CreatePost = () => {
             src={userLoginData?.avatarUrl}
             alt=""
             className="nav-profile-pic"
+            width="10%"
+            height="10%"
           />
           <textarea
             value={createPost.text}

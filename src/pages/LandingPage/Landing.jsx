@@ -41,7 +41,7 @@ const Landing = () => {
       {/* filter section in landing page */}
       <div className="feed">
         <div className="filter-container">
-          {/* <div className="filter-post">
+          <div className="filter-post">
             <div className="filter">
               <div
                 className="filter-content"
@@ -61,7 +61,7 @@ const Landing = () => {
                 <p>Trending</p>
               </div>
             </div>
-          </div> */}
+          </div>
           {/* user to create post */}
           <CreatePost />
         </div>

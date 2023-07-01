@@ -47,6 +47,7 @@ export const posts = [
     createdAt: "01 march, 2022",
     updatedAt: formatDate(),
   },
+
   {
     _id: uuid(),
     content:
@@ -88,6 +89,19 @@ export const posts = [
   },
   {
     _id: uuid(),
+    content: "Healthy eating",
+    image: "",
+    likes: {
+      likeCount: 13,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "mahi",
+    createdAt: "01 april, 2023",
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
     content:
       "To stay on top of your fitness goals, you need to be self-motivated",
     image: "",
@@ -106,12 +120,132 @@ export const posts = [
     content: "Push harder than yesterday if you want a different tomorrow.",
     image: "https://img.freepik.com/free-vector/motivation-quote-background-yellow-color_23-2147857937.jpg?w=2000",
     likes: {
-      likeCount: 13,
+      likeCount: 1,
       likedBy: [],
       dislikedBy: [],
     },
     username: "arpit",
     createdAt: "01 july, 2023",
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Just had an amazing workout session! Feeling pumped! 💪",
+    likes: {
+      likeCount: 10,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "johndoe",
+    createdAt: "02 july, 2023",
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Enjoying a cup of coffee while working on my latest project ☕️",
+    likes: {
+      likeCount: 5,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "alicesmith",
+    createdAt: "01 june, 2023",
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Exploring new hiking trails this weekend! Can't wait to be surrounded by nature 🌿",
+    likes: {
+      likeCount: 8,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "emilyj",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Trying out a new recipe today. Hoping it turns out delicious! 🍳",
+    likes: {
+      likeCount: 7,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "johndoe",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Just finished reading an amazing book. Highly recommend it! 📚",
+    likes: {
+      likeCount: 12,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "alicesmith",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Attended an inspiring tech conference today. Learned a lot! 💻",
+    likes: {
+      likeCount: 6,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "emilyj",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Enjoying a relaxing day at the beach. Nothing beats the sound of waves! 🌊",
+    likes: {
+      likeCount: 9,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "johndoe",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Excited to start a new coding project. Time to bring my ideas to life! 💻",
+    likes: {
+      likeCount: 4,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "alicesmith",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Spent the day exploring art galleries. So much creativity in one place! 🎨",
+    likes: {
+      likeCount: 7,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "emilyj",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Enjoying a peaceful evening with a good book and a cup of tea. Blissful! 📖☕️",
+    likes: {
+      likeCount: 11,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "johndoe",
+    createdAt: formatDate(),
     updatedAt: formatDate(),
   },
 

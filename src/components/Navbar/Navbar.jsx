@@ -15,16 +15,10 @@ const Navbar = () => {
   const { userLoginData, dispatch, setOpenModal, userLoggedIn } =
     useContext(DataContext);
   const navigate = useNavigate();
-
-  // console.log("insideNav", localStorage.getItem("userData"));
-  // useEffect(() => {
-  //   setUserLoginData(JSON.parse(localStorage.getItem("userData")));
-  // }, []);
-  console.log("nav", userLoginData);
   return (
     <div className="nav-main">
       <div className="nav-container">
-        <div className="navbar">
+        {/* <div className="navbar">
           <div className="nav-icons">
             <HomeIcon />
           </div>
@@ -41,10 +35,10 @@ const Navbar = () => {
           <div className="nav-icons">
             <BookmarkIcon />
           </div>
-        </div>
+        </div> */}
       </div>
 
-      {/* navbar for desktop view */}
+
       <div className="nav-desktop">
         <div>
           <h1>
@@ -60,7 +54,9 @@ const Navbar = () => {
             <div className="nav-icons">
               <HomeIcon />
             </div>
-            Home
+            <div className="nav-title">
+              Home
+            </div>
           </div>
         </NavLink>
         <NavLink className="not-a-link" to="/explore">
@@ -68,7 +64,10 @@ const Navbar = () => {
             <div className="nav-icons">
               <ExploreIcon />
             </div>{" "}
-            Explore
+            <div className="nav-title">
+              Explore
+            </div>
+
           </div>
         </NavLink>
         <NavLink className="not-a-link" to="/likepage">
@@ -77,7 +76,9 @@ const Navbar = () => {
             <div className="nav-icons">
               <FavoriteIcon />
             </div>
-            Liked Posts
+            <div className="nav-title">
+              Liked posts
+            </div>
           </div>
         </NavLink>
         <NavLink className="not-a-link" to="/bookmark">
@@ -86,7 +87,9 @@ const Navbar = () => {
             <div className="nav-icons">
               <BookmarkIcon />
             </div>{" "}
-            Bookmarks
+            <div className="nav-title">
+              Bookmarks
+            </div>
           </div>
         </NavLink>
         <NavLink className="not-a-link" to={`/profilepage/${userLoggedIn}`}>
@@ -94,7 +97,9 @@ const Navbar = () => {
             <div className="nav-icons">
               <PersonIcon />
             </div>{" "}
-            Profile
+            <div className="nav-title">
+              Profile
+            </div>
           </div>
         </NavLink>
         <NavLink to=""> <div
@@ -108,7 +113,9 @@ const Navbar = () => {
           <div className="nav-icons">
             <LogoutIcon />
           </div>{" "}
-          Logout
+          <div className="nav-title">
+            Logout
+          </div>
         </div>
         </NavLink>
 

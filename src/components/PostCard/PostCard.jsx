@@ -58,7 +58,7 @@ const PostCard = ({ data }) => {
       <div className="post-container">
         <NavLink className="not-a-link" to={`/profilepage/${data?.username}`}>
           <div className="post-title">
-            <img src={picOfUser?.avatarUrl} alt="" className="nav-profile-pic" />
+            <img src={picOfUser?.avatarUrl} alt="" className="nav-profile-pic" width="80px" height="80px" />
             <div className="post-date">
               <p>
                 <b>
