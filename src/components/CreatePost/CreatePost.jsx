@@ -18,7 +18,7 @@ const CreatePost = () => {
   } = useContext(DataContext);
 
   const { editPost, setEditPost } = useContext(AsideDataContext);
-  
+
   return (
     <div>
       <div className="new-post-container">
