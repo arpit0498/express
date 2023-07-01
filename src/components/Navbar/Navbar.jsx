@@ -18,29 +18,7 @@ const Navbar = () => {
   return (
     <div className="nav-main">
       <div className="nav-container">
-        {/* <div className="navbar">
-          <div className="nav-icons">
-            <HomeIcon />
-          </div>
-
-          <div className="nav-icons">
-            <ExploreIcon />
-          </div>
-          <div className="nav-icons">
-            <ControlPointIcon />
-          </div>
-          <div className="nav-icons">
-            <FavoriteIcon />
-          </div>
-          <div className="nav-icons">
-            <BookmarkIcon />
-          </div>
-        </div> */}
-      </div>
-
-
-      <div className="nav-desktop">
-        <div>
+        <div className="navbar-title" >
           <h1>
             <span className="text-primary">Gym</span>
             <span className="text-secondary-dark">Express</span>
@@ -119,7 +97,7 @@ const Navbar = () => {
         </div>
         </NavLink>
 
-        <button onClick={() => setOpenModal(true)}> New Post</button>
+        <button onClick={() => setOpenModal(true)} > New Post</button>
         <NavLink
           to={`/profilepage/${userLoggedIn}`}
           className="nav-profile-container not-a-link"
