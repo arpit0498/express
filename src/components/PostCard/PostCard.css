@@ -1,93 +1,120 @@
+/* Common styles for all screen sizes */
 .post-container {
-    width: 30rem;
-    /* border:1px solid black; */
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.5rem 0.2rem hsla(260, 11%, 85%, 1);
-    position: relative;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.2rem hsla(260, 11%, 85%, 1);
+  position: relative;
 }
 
 .post-title {
-    width: 100%;
-    display: flex;
-    gap: 0.5rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .post-content {
-    border: none;
-    padding: 1rem;
-    margin: 0;
+  border: none;
+  padding: 1rem;
+  margin: 0;
 }
 
 #three-dots {
-    margin-left: auto
+  margin-left: auto;
 }
 
 #three-dots:hover {
-    cursor: pointer
+  cursor: pointer;
 }
 
 .post-img {
-    margin-top: 0.5rem;
-    width: 100%;
-    
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
 .post-actions {
-    margin-top: 0.5rem;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .post-icons {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .liked-counter-div {
-    display: flex;
-    gap: 0.2rem;
-    align-items: center;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
 }
 
 .post-date {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .post-popup {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    background-color: white;
-    min-width: 8rem;
-    padding: auto;
-    box-shadow: 0 0 0.5rem 0.2rem hsla(260, 11%, 85%, 1);
-    border-radius: 0.5rem;
-    z-index: 2;
-    position: absolute;
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: white;
+  min-width: 8rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.2rem hsla(260, 11%, 85%, 1);
+  border-radius: 0.5rem;
+  z-index: 2;
+  position: absolute;
+  margin: 1rem;
 }
 
 .post-popup div {
-    background-color: white;
-    padding: 0.5rem;
-    border: none;
-    font-size: 1rem;
-    align-self: flex-start;
-    border-top-left-radius: 0.2rem;
-    border-bottom-left-radius: 0.2rem;
-    width: 100%;
+  background-color: white;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  align-self: flex-start;
+  border-radius: 0.2rem;
+  width: 100%;
 }
 
 .hover:hover {
-    background-color: lightgray;
-    cursor: pointer;
+  background-color: lightgray;
+  cursor: pointer;
 }
 
 .three-dots-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .post-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .post-content {
+    font-size: 0.8rem;
+  }
+  
+  .post-actions {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .post-icons {
+    font-size: 1.2rem;
+  }
+  
+  .post-date {
+    font-size: 0.8rem;
+  }
+  
+  .post-popup {
+    width: 100%;
+    margin: 0;
+  }
 }

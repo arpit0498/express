@@ -71,3 +71,12 @@
     padding:0rem 0.5rem;
     border-radius: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+  .new-post-container {
+    width: 100%;
+  }
+  
+  .new-post-input textarea {
+    font-size: 1rem;
+  }
+}
