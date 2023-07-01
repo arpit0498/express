@@ -20,6 +20,33 @@ export const posts = [
     createdAt: "02 Nov, 2020",
     updatedAt: formatDate(),
   },
+
+  {
+    _id: uuid(),
+    content: "Dead last finish is greater than did not finish, which trumps did not start",
+    image: "",
+    likes: {
+      likeCount: 2,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "arpit",
+    createdAt: "11 Jan, 2022",
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "Healthy Lifestyle",
+    image: "",
+    likes: {
+      likeCount: 3,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "mahi",
+    createdAt: "01 march, 2022",
+    updatedAt: formatDate(),
+  },
   {
     _id: uuid(),
     content:
@@ -33,7 +60,32 @@ export const posts = [
     createdAt: "17 March,2022",
     updatedAt: formatDate(),
   },
-
+  {
+    _id: uuid(),
+    content: "Take care of your body. It’s the only place you have to live.",
+    image: "",
+    likes: {
+      likeCount: 3,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "vipul2023",
+    createdAt: "01 july, 2022",
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    content: "New on this ",
+    image: "",
+    likes: {
+      likeCount: 3,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "jane04",
+    createdAt: "01 march, 2023",
+    updatedAt: formatDate(),
+  },
   {
     _id: uuid(),
     content:
@@ -51,15 +103,18 @@ export const posts = [
 
   {
     _id: uuid(),
-    content: "Dead last finish is greater than did not finish, which trumps did not start",
-    image: "",
+    content: "Push harder than yesterday if you want a different tomorrow.",
+    image: "https://img.freepik.com/free-vector/motivation-quote-background-yellow-color_23-2147857937.jpg?w=2000",
     likes: {
-      likeCount: 5,
+      likeCount: 13,
       likedBy: [],
       dislikedBy: [],
     },
     username: "arpit",
-    createdAt: "11 Jan, 2021",
+    createdAt: "01 july, 2023",
     updatedAt: formatDate(),
   },
+
+
+
 ];
