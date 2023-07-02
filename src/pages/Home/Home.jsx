@@ -25,11 +25,6 @@ const Home = () => {
   return (
     <div className="home-main">
       <div className="home-container">
-        {/* <img
-          id="login-img"
-          src=" src=https://bachat-bazaar.vercel.app/static/media/signin.f6d3587ee1ffb222b6d43ca3b8308db9.svg"
-          alt=""
-        /> */}
 
         <div className="login">
           <div className="login-container">

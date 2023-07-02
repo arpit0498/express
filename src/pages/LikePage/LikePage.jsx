@@ -30,26 +30,14 @@ const LikePage = () => {
 
   return (
     <div className="bookmark-main">
-      {/* <div className="bookmark-nav">
-        <Navbar />
-      </div> */}
+
       <div className="bookmark-post">
         {!state.likedPosts.length && <h1>No Liked Posts yet!</h1>}
         {state?.posts?.map((data) =>
           state.likedPosts.includes(data._id) ? <PostCard data={data} /> : <></>
         )}
       </div>
-      {/* <div>
-        <div className="side-search-bar">
-          <SearchBar />
-          <div className="user-container">
-            <h2>You might Like</h2>
-            {state?.userToFollow?.map((user) => (
-              <UserList user={user} />
-            ))}
-          </div>
-        </div>
-      </div> */}
+
     </div>
   );
 };

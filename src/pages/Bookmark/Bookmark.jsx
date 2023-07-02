@@ -31,26 +31,14 @@ const Bookmark = () => {
 
   return (
     <div className="bookmark-main">
-      {/* <div className="bookmark-nav">
-        <Navbar />
-      </div> */}
+
       <div className="bookmark-post">
         {!state.bookmarkedPosts.length && <h1>No Bookmarks yet!</h1>}
         {state?.posts?.map((data) =>
           bookmarkData.includes(data._id) ? <PostCard data={data} /> : <></>
         )}
       </div>
-      {/* <div>
-        <div className="side-search-bar">
-          <SearchBar />
-          <div className="user-container">
-            <h2>You might Like</h2>
-                  {state?.userToFollow.map((user) => (
-              <UserList user={user} />
-            ))}
-          </div>
-        </div>
-      </div> */}
+
     </div>
   );
 };

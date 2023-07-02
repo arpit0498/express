@@ -14,12 +14,6 @@ const SignUp = () => {
   return (
     <div className="signup-main">
       <div className="signup-container">
-        {/* <div className="signup-img">
-          <img
-            src="https://bachat-bazaar.vercel.app/static/media/signup.779f10c3210826458b52f161a26d6d14.svg"
-            alt=""
-          />
-        </div> */}
         <div className="signup-form">
           <h1>
             <span className="text-primary">Gym</span>

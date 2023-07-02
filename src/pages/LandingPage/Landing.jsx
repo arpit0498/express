@@ -17,8 +17,6 @@ const Landing = () => {
       username === userLoggedIn ||
       state?.following?.find((user) => user.username === username)
   );
-
-  // const { editPost, setEditPost } = useContext(AsideDataContext);
   const data = state.filter
     ? [...landingPost].sort((a, b) =>
       state.filter === "latest"
@@ -26,8 +24,6 @@ const Landing = () => {
         : b.likes.likeCount - a.likes.likeCount
     )
     : [...landingPost];
-
-  // console.log(data);
 
 
   useEffect(() => {
@@ -37,7 +33,7 @@ const Landing = () => {
   return (
     <div className="landing-container">
 
-      {/* <Navbar /> */}
+
       {/* filter section in landing page */}
       <div className="feed">
         <div className="filter-container">

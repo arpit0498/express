@@ -28,19 +28,7 @@ const Explore = () => {
             <PostCard data={data} />
           ))}
       </div>
-      <div>
-        {/* <div className="side-search-bar">
-          <SearchBar />
-          <div className="user-container">
-            <h2>You might Like</h2>
 
-
-            {state?.userToFollow?.map((user) => (
-              <UserList user={user} />
-            ))}
-          </div>
-        </div> */}
-      </div>
     </div>
   );
 };

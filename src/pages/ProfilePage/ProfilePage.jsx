@@ -12,7 +12,6 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 
 const ProfilePage = () => {
-  //   const { userLoggedIn } = useContext(AuthContext);
   const { userLoginData } = useContext(DataContext);
   const { userPost, setUserPost, state } = useContext(DataContext);
 
@@ -20,7 +19,7 @@ const ProfilePage = () => {
 
   useEffect(() => {
     (async () => {
-      // console.log(userLoggedIn);
+
       try {
         const response = await axios.get(`/api/posts/user/${username}`);
         console.log({ response, username });
@@ -41,7 +40,6 @@ const ProfilePage = () => {
     (user) => user.username.toString() === username
   );
 
-  console.log("user found", userDetail);
   return (
     <div className="landing-container">
       <div className="profile-page-content">
