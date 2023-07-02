@@ -25,11 +25,11 @@ const Home = () => {
   return (
     <div className="home-main">
       <div className="home-container">
-        <img
+        {/* <img
           id="login-img"
           src=" src=https://bachat-bazaar.vercel.app/static/media/signin.f6d3587ee1ffb222b6d43ca3b8308db9.svg"
           alt=""
-        />
+        /> */}
 
         <div className="login">
           <div className="login-container">
@@ -39,11 +39,11 @@ const Home = () => {
 
             </h1>
             <div className="login-form">
-              <label>username:</label>
+              <label>Username:</label>
               <input
                 type="text"
                 value={loginInput.username}
-                placeholder="Enter username"
+                placeholder="Enter username for login"
                 onChange={(e) =>
                   setLoginInput({ ...loginInput, username: e.target.value })
                 }
